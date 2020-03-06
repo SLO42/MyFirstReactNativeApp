@@ -7,7 +7,7 @@ import { createDrawerNavigator } from '@react-navigation/drawer';
 import { NavigationContainer } from "@react-navigation/native";
 
 import Home from '../Home';
-import Test from '../main';
+import AccountPage from '../Account';
 import SignIn from '../SignIn';
 import SignUp from "../SignUp";
 import CreateAccount from '../CreateAccount';
@@ -59,7 +59,7 @@ class App extends React.Component {
         <Drawer.Navigator>
         { userObj.dbUser && userObj.dbUser.accountCreated ? null : <Drawer.Screen name="Create Account" component={CreateAccountWithProps} /> }
         <Drawer.Screen name="Home" component={Home} />
-        <Drawer.Screen name="Test" component={Test} />
+        <Drawer.Screen name="Account Page" component={AccountPage} />
       </Drawer.Navigator> : 
         <Drawer.Navigator>
           <Drawer.Screen name="Sign In" component={SignIn} />

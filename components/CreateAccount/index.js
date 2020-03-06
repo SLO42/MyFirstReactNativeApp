@@ -188,16 +188,13 @@ class CreateAccount extends Component {
   render() {
 		const {loading, stage} = this.state;
 		
-		return ( <AccountContext.Consumer>
-			{
-				dbUser => loading ?  <this.Stage0 dbUser={this.state.dbUser}/> : stage == 1 ? 
+		return ( 
+				loading ?  <this.Stage0 dbUser={this.state.dbUser}/> : stage == 1 ?
 				<this.Stage1 dbUser={this.state.dbUser}
 				 nextStage={this.state.nextStage} /> :
 				stage == 2 ? <this.Stage2 dbUser={this.state.dbUser} 
 				prevStage={this.state.prevStage} nextStage={this.state.nextStage}
 				/> : <this.Stage3 dbUser={this.state.dbUser} 	prevStage={this.state.prevStage} nextStage={this.state.nextStage} />
-			}
-		</AccountContext.Consumer>
 
       // <Container>
 			// 	<Header>
