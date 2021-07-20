@@ -24,7 +24,7 @@
     "native-base": "^2.13.8",
     "react": "16.8.6",
     "react-devtools": "^3.6.3",
-    "react-native": "0.60.5",
+    "react-native": "0.62.3",
     "react-native-dotenv": "^0.2.0",
     "react-native-fs": "^2.16.4",
     "react-native-gesture-handler": "^1.5.6",
